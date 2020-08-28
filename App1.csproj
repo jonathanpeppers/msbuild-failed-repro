@@ -1,13 +1,11 @@
 ﻿<Project Sdk="Microsoft.Android.Sdk/11.0.100-ci.net5-0-android.88">
 	<PropertyGroup>
-		<RootNamespace>App1</RootNamespace>
-		<AssemblyName>App1</AssemblyName>
 		<TargetFramework>net5.0-android</TargetFramework>
 		<EnableDefaultItems>false</EnableDefaultItems>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
 		<OutputType>Exe</OutputType>
-		<XamarinAndroidSupportSkipVerifyVersions>True</XamarinAndroidSupportSkipVerifyVersions>
+		<XamarinAndroidSupportSkipVerifyVersions>true</XamarinAndroidSupportSkipVerifyVersions>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)' == 'Debug'">
 		<OutputPath>bin\Debug</OutputPath>
@@ -27,33 +25,31 @@
 		<PackageReference Include="System.Threading.AccessControl" Version="5.0.0-preview.3.20214.6"/>
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="Library1\Library1.csproj" 		/>
+		<ProjectReference Include="Library1\Library1.csproj" />
 	</ItemGroup>
 	<ItemGroup>
-		<None Include="Properties\AndroidManifest.xml" 		/>
-		<EmbeddedResource Include="MainPage.xaml" 		/>
-		<EmbeddedResource Include="App.xaml" 		/>
+		<None Include="Properties\AndroidManifest.xml" />
+		<EmbeddedResource Include="MainPage.xaml" />
+		<EmbeddedResource Include="App.xaml" />
 	</ItemGroup>
 	<ItemGroup>
-		<Compile Include="Properties\AssemblyInfo.cs" 		/>
-		<Compile Include="Resources\Resource.designer.cs" 		/>
-		<Compile Include="MainActivity.cs" 		/>
-		<Compile Include="MainPage.xaml.cs" 		/>
-		<Compile Include="App.xaml.cs" 		/>
-		<Compile Include="Bar.cs" 		/>
+		<Compile Include="Resources\Resource.designer.cs" />
+		<Compile Include="MainActivity.cs" />
+		<Compile Include="MainPage.xaml.cs" />
+		<Compile Include="App.xaml.cs" />
+		<Compile Include="Bar.cs" />
 	</ItemGroup>
 	<ItemGroup>
-		<AndroidResource Include="Resources\drawable-mdpi\Icon.png" 		/>
-		<AndroidResource Include="Resources\drawable-hdpi\Icon.png" 		/>
-		<AndroidResource Include="Resources\drawable-xhdpi\Icon.png" 		/>
-		<AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" 		/>
-		<AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" 		/>
-		<AndroidResource Include="Resources\layout\Main.axml" 		/>
-		<AndroidResource Include="Resources\values\Strings.xml" 		/>
-		<AndroidResource Include="Resources\values\colors.xml" 		/>
-		<AndroidResource Include="Resources\values\styles.xml" 		/>
-		<AndroidResource Include="Resources\layout\Tabbar.axml" 		/>
-		<AndroidResource Include="Resources\layout\Toolbar.axml" 		/>
+		<AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+		<AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+		<AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+		<AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+		<AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+		<AndroidResource Include="Resources\layout\Main.axml" />
+		<AndroidResource Include="Resources\values\Strings.xml" />
+		<AndroidResource Include="Resources\values\colors.xml" />
+		<AndroidResource Include="Resources\values\styles.xml" />
+		<AndroidResource Include="Resources\layout\Tabbar.axml" />
+		<AndroidResource Include="Resources\layout\Toolbar.axml" />
 	</ItemGroup>
-
 </Project>
